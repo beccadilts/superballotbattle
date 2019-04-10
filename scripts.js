@@ -45,3 +45,20 @@ for (var j = 0; j < close.length; j++) {
   e.stopPropagation();
     })
 }
+
+var screens = document.querySelectorAll('#screens')
+var close = document.querySelectorAll('.close-modal')
+for (var i = 0; i < screens.length; i++) {
+    screens[i].addEventListener('click', function() {
+      if (document.getElementById('modal-active')) 
+    document.getElementById('modal-active').id = '';
+      if (this.querySelector('.modal'))
+    this.querySelector('.modal').id = 'modal-active';
+    })
+}
+for (var j = 0; j < close.length; j++) {
+    close[j].addEventListener('click', function(e) {
+        this.parentElement.id = '';
+  e.stopPropagation();
+    })
+}
