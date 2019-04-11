@@ -94,35 +94,46 @@ left:6em;
 	z-index:-1;
 	}
 
-.countdown{
+	.launch{
 position:relative;
-left:35%;
-text-align:center;
-font-size: 2.1em;
+top:10em;
+left:0%;
+content-align:center;
 color: white;
 font-weight:bolder;
+    display: block;
     
+
+  }
+
+.countdown{
+position:relative;
+left:0%;
+text-align:center;
+font-size: 2em;
+color: white;
+font-weight:bolder;
     background-image: -webkit-linear-gradient(top, #3534AC, #6F6EFF, #3534AC);
     border: 5px solid #111;
     border-radius: 6px;
     display: block;
-    position: absolute;
-
+    
 
   }
 
 section{
-	padding-bottom: 15em;
+	padding-bottom: 5em;
 }
 
 .button {
 	
 	position:relative;
+	float: right;
 	display: block;
-	width: 375px;
-	height: 110px;
+	width: 200px;
+	height: 90px;
 	border: 0;
-	padding-right:10em;
+	padding-top: 2em;
 	 background-image: -webkit-linear-gradient(top, #ffffff, #00AEEF);
 	 border-radius: 20px;
 }
@@ -132,7 +143,7 @@ section{
 	position:relative;
 	display: inline-block;
 	text-transform: uppercase;
-	font-size: 4em;
+	font-size: 2.5em;
 	stroke: 5px solid black;
 	
 	padding: 0;
@@ -188,7 +199,7 @@ ul {
 }
 /*media page*/
 .image-grid  img{
-	padding-bottom: 10em;
+	padding-bottom: 5em;
 	max-width: 100%;
 }
 
@@ -197,7 +208,7 @@ ul {
 }
 iframe {
 	max-width: 100%;
-	height:auto;
+
 }
 .video {
 	padding-bottom: 6em;
@@ -233,6 +244,7 @@ iframe {
 p {
 	position: relative; 
 	max-width: 35em;
+	color: white;
 
 }
 
@@ -285,8 +297,9 @@ position: relative;
 display: block;
 max-width: 30%;
 max-height:30%;
-left:26em;
-	z-index: 2;
+left:26%;
+top: 30%;
+
 
 }
 
@@ -317,30 +330,12 @@ font-weight:bolder;
 section{
 	padding-bottom: 15em;
 }
-
-.button {
-	
-	position:relative;
-	display: block;
-	width: 375px;
-	height: 110px;
-	border: 0;
-	padding-right:10em;
-	 background-image: -webkit-linear-gradient(top, #ffffff, #00AEEF);
-	 border-radius: 20px;
-}
-
-.button a {
-	font-family: 'Boogaloo', sans-serif;
-	position:relative;
+.overview video {
 	display: inline-block;
-	text-transform: uppercase;
-	font-size: 4em;
-	stroke: 5px solid black;
-	
-	padding: 0;
-
+	position: relative;
+	left:30%;
 }
+
 
 .feature {
 	float: right;
@@ -388,6 +383,11 @@ ul {
     font-family: 'Boogaloo', sans-serif;
     color: white;
     cursor: pointer;
+}
+
+.team-logo {
+max-width: 50%;
+	
 }
 /*media page*/
 .image-grid  img{
