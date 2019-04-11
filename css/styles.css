@@ -20,6 +20,7 @@ a {
 	color: white;
 	padding-left: 3em;
 	padding-right: 3em;
+	text-align: center;
 }
 header a {
 	text-decoration: none;
@@ -29,17 +30,25 @@ header a {
 }
 
 a:hover:{
-background-color: red;
 opacity: 0.5;
 }
 
 nav {
-        top: 0;
-        right: 0;
-        max-width: 100%;
-        min-height: 0;
-        height: auto;
       
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 100vh;
+  height: 100%;
+  background: #464646;
+  min-height: 30vh;
+  width: 75%;
+  max-width: 15em;
+  transition: all 0.5s ease;
+}
+    
+   li a  {
+line-height: 2.5em;
     }
     nav li {
         display: inline-block;
@@ -50,6 +59,22 @@ ul {
 	right: 0;
 }
 
+.nav-toggle {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  height: 2em;
+  width: 2em;
+  right: 1em;
+  
+}
+
+.nav-active nav {
+  top: 3em;
+}
 h1 {
 	font-family: 'Boogaloo', cursive;
 	text-transform: uppercase;
@@ -164,13 +189,13 @@ section{
     top: -100vh;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: blue;
-    width: 50%;
-    height:75vh;
+    background: #AC3939;
+    width: 80%;
+    height:80vh;
     max-width: 100%;
     max-height: 95vh;
     overflow: auto;
-    padding: 2em 1em;
+    padding:1em;
     opacity: 0;
     transition: opacity 0.5s ease;
 }
@@ -180,11 +205,12 @@ section{
 }
 .desc img{
 	float:left;
-	max-width: 50%;
+	max-width: 25%;
 }
 .desc ul{
-	float:right;
-	max-width: 50%;
+	
+	max-width: 100%;
+	list-style-type: circle;
 }
 
 ul {
@@ -225,7 +251,7 @@ iframe {
 	max-height: 50px;
 	max-width: 50px;
 	position: relative;
-	top:19.5em;
+	top:0;
 }
 
 .blog-main {
@@ -242,11 +268,12 @@ iframe {
  {
  	max-width: 100%;
  	height:auto;
+
  }
 p {
 	position: relative; 
 	max-width: 35em;
-	color: white;
+	color: black;
 
 }
 
@@ -302,6 +329,22 @@ float: left;
 
 
 @media (min-width:700px) {
+
+	.nav-toggle {
+		display:none;
+	}
+
+	nav {
+        top: 0;
+        right: 0;
+        max-width: 100%;
+        min-height: 0;
+        
+      
+    }
+nav li {
+	display: inline-block;
+}
 /* landing*/
 .logo {
 position: relative;
